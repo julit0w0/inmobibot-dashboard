@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(///wsl.localhost/Ubuntu/home/julit0/**)",
+      "Read(//mnt/c/**)",
+      "Bash(npm run *)",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"which npm; which node; which vite; ls /home/julit0/proyectos/inmueblebot/inmobibot-dashboard-v2/node_modules/.bin/vite 2>/dev/null\")",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"ls /mnt/c/nvm4w/nodejs/ | head -5; echo '---'; /mnt/c/nvm4w/nodejs/node --version 2>&1 || echo 'node not there'\")",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"ls /mnt/c/nvm4w/nodejs/ 2>&1; echo '---PATH---'; echo \\\\$PATH\")",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"ls /mnt/c/nvm4w/nodejs/ 2>&1\")",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"echo PATH_IS && printenv PATH\")",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"node.exe --version 2>&1; echo '---'; /mnt/c/nvm4w/nodejs/node.exe node_modules/.bin/vite --version 2>&1\")",
+      "PowerShell(wsl -d Ubuntu bash -l -c \"file node_modules/.bin/vite; cat node_modules/.bin/vite | head -5\")",
+      "Bash(npm install *)",
+      "Bash(wsl -d Ubuntu -e bash -c \"source /home/julit0/.nvm/nvm.sh && cd /home/julit0/proyectos/inmueblebot/inmobibot-dashboard-v2 && npm run dev 2>&1\")",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(wsl *)",
+      "Bash(netstat -ano)",
+      "Bash(cat)",
+      "Bash(echo \"written: $?\")",
+      "Bash(MSYS_NO_PATHCONV=1 wsl -d Ubuntu chmod +x /home/julit0/start_vite.sh)",
+      "Bash(MSYS_NO_PATHCONV=1 wsl -d Ubuntu bash /home/julit0/start_vite.sh)",
+      "Bash(MSYS_NO_PATHCONV=1 wsl *)"
+    ]
+  }
+}
